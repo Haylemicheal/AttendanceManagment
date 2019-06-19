@@ -1,0 +1,14 @@
+<ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+<div class="table-responsive">
+	<table class="table table-condensed" *ngIf="users">
+		<tr class="firstrow"><th>Ecode</th><th>Date</th><th>Name</th><th>IN_1</th><th>OUT_1</th><th>IN_2</th><th>OUT_2</th><th>IN_3</th><th>OUT_3</th><th>IN_4</th><th>OUT_4</th><th>IN_5</th><th>OUT_5</th><th>WORKING_HOUR</th></tr>
+		<tr *ngFor="let user of users.data">
+			<td>{{user.ECode}}</td><td>{{user.Datee}}</td><td>{{user.Name}}</td><td>{{user.IN_1}}</td><td>{{user.OUT_1}}</td><td>{{user.IN_2}}</td><td>{{user.OUT_2}}</td><td>{{user.IN_3}}</td><td>{{user.OUT_3}}</td><td>{{user.IN_4}}</td><td>{{user.OUT_4}}</td><td>{{user.IN_5}}</td><td>{{user.OUT_5}}</td><td>{{user.Working_hour}}</td></tr>
+	</table>
+</div>
